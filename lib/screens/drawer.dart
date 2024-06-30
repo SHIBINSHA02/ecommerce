@@ -24,7 +24,6 @@ class CustomDrawer extends StatelessWidget {
             leading: Icon(Icons.home),
             title: Text('Home'),
             onTap: () {
-              // Handle the home action
               Navigator.pop(context); // Close the drawer
             },
           ),
@@ -32,7 +31,6 @@ class CustomDrawer extends StatelessWidget {
             leading: Icon(Icons.shopping_cart),
             title: Text('Shop'),
             onTap: () {
-              // Handle the shop action
               Navigator.pop(context); // Close the drawer
             },
           ),
@@ -40,7 +38,6 @@ class CustomDrawer extends StatelessWidget {
             leading: Icon(Icons.account_circle),
             title: Text('Profile'),
             onTap: () {
-              // Handle the profile action
               Navigator.pop(context); // Close the drawer
             },
           ),
@@ -48,12 +45,10 @@ class CustomDrawer extends StatelessWidget {
             leading: Icon(Icons.settings),
             title: Text('Settings'),
             onTap: () {
-              // Handle the settings action
-              Navigator.pop(context); // Close the drawer
+              Navigator.pushNamed(context, '/settings'); // Navigate to settings
             },
           ),
         ],
       ),
     );
-  }
-}
+  }}
